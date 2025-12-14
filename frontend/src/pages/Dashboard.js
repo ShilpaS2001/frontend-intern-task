@@ -15,7 +15,7 @@ export default function Dashboard() {
 
     const fetchTasks = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/tasks", {
+        const res = await axios.get("https://backend-api-x3z0.onrender.com/api/tasks", {
           headers: { Authorization: token }
         });
         setTasks(res.data);
@@ -34,7 +34,7 @@ export default function Dashboard() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/tasks",
+        "https://backend-api-x3z0.onrender.com/api/tasks",
         { title },
         { headers: { Authorization: token } }
       );
@@ -47,7 +47,7 @@ export default function Dashboard() {
 
   const deleteTask = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/tasks/${id}`, {
+      await axios.delete(`https://backend-api-x3z0.onrender.com/api/tasks/${id}`, {
         headers: { Authorization: token }
       });
       setTasks(tasks.filter(t => t._id !== id));
