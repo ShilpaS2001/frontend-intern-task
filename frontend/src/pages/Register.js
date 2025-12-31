@@ -21,25 +21,25 @@ export default function Register() {
     }
   };
 
-  return (
+return (
   <div className="container">
     <h2>Register</h2>
 
     <input
       placeholder="Full Name"
-      onChange={e => setName(e.target.value)}
+      onChange={(e) => setName(e.target.value)}
     />
 
     <input
       type="email"
       placeholder="Email"
-      onChange={e => setEmail(e.target.value)}
+      onChange={(e) => setEmail(e.target.value)}
     />
 
     <input
       type="password"
       placeholder="Password"
-      onChange={e => setPassword(e.target.value)}
+      onChange={(e) => setPassword(e.target.value)}
     />
 
     <button onClick={register}>Register</button>
@@ -49,6 +49,7 @@ export default function Register() {
     </div>
   </div>
 );
+
 
 
 }

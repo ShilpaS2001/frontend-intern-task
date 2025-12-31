@@ -1,34 +1,37 @@
-body {
-  margin: 0;
-  padding: 0;
+* {
+  box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f6f8;
-  min-height: 100vh;
 }
 
-/* Card container */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Center container */
 .container {
-  width: 360px;
+  width: 380px;
   margin: 80px auto;
   background: #ffffff;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
 }
 
 /* Headings */
 h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   color: #333;
 }
 
 /* Inputs */
 input {
   width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
+  padding: 11px;
+  margin-bottom: 12px;
+  border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 14px;
 }
@@ -41,14 +44,13 @@ input:focus {
 /* Buttons */
 button {
   width: 100%;
-  padding: 10px;
-  background: #667eea;
-  color: white;
+  padding: 11px;
+  border-radius: 6px;
   border: none;
-  border-radius: 5px;
+  background: #667eea;
+  color: #fff;
   font-size: 15px;
   cursor: pointer;
-  margin-top: 10px;
 }
 
 button:hover {
@@ -58,7 +60,7 @@ button:hover {
 /* Links */
 .link {
   text-align: center;
-  margin-top: 12px;
+  margin-top: 14px;
 }
 
 .link a {
@@ -67,34 +69,33 @@ button:hover {
   font-weight: 500;
 }
 
-/* Dashboard task list */
-.task {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #f7f7f7;
-  padding: 8px 10px;
-  border-radius: 4px;
-  margin-top: 8px;
-}
-
-.task button {
-  width: auto;
-  padding: 5px 10px;
-  background: #e53e3e;
-  font-size: 13px;
-}
-
-.task button:hover {
-  background: #c53030;
-}
-
-/* Logout button */
+/* Dashboard */
 .logout {
   background: #e53e3e;
   margin-bottom: 15px;
 }
 
 .logout:hover {
+  background: #c53030;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.task button {
+  width: auto;
+  padding: 6px 10px;
+  background: #e53e3e;
+  font-size: 13px;
+}
+
+.task button:hover {
   background: #c53030;
 }

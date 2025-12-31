@@ -20,20 +20,20 @@ export default function Login() {
     }
   };
 
-  return (
+return (
   <div className="container">
     <h2>Login</h2>
 
     <input
       type="email"
       placeholder="Email"
-      onChange={e => setEmail(e.target.value)}
+      onChange={(e) => setEmail(e.target.value)}
     />
 
     <input
       type="password"
       placeholder="Password"
-      onChange={e => setPassword(e.target.value)}
+      onChange={(e) => setPassword(e.target.value)}
     />
 
     <button onClick={login}>Login</button>
@@ -43,6 +43,7 @@ export default function Login() {
     </div>
   </div>
 );
+
 
 
 }

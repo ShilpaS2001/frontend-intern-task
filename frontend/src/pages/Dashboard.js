@@ -62,7 +62,7 @@ export default function Dashboard() {
 };
 
 
-  return (
+return (
   <div className="container">
     <h2>Dashboard</h2>
 
@@ -72,22 +72,21 @@ export default function Dashboard() {
 
     <input
       value={title}
-      onChange={e => setTitle(e.target.value)}
+      onChange={(e) => setTitle(e.target.value)}
       placeholder="Enter new task"
     />
 
     <button onClick={addTask}>Add Task</button>
 
-    <div>
-      {tasks.map(task => (
-        <div className="task" key={task._id}>
-          <span>{task.title}</span>
-          <button onClick={() => deleteTask(task._id)}>Delete</button>
-        </div>
-      ))}
-    </div>
+    {tasks.map((task) => (
+      <div className="task" key={task._id}>
+        <span>{task.title}</span>
+        <button onClick={() => deleteTask(task._id)}>Delete</button>
+      </div>
+    ))}
   </div>
 );
+
 
 
 }
